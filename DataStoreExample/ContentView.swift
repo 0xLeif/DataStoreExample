@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var viewModel: ContentViewModel
+
+    init(postLoader: PostLoader = PostLoader()) {
+        _viewModel = ObservedObject(wrappedValue: ContentViewModel(postLoader: postLoader))
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            List(viewModel.posts) { post in
+                Text(post.title)
+            }
+
+            if viewModel.isLoading {
+                ProgressView()
+            }
         }
-        .padding()
+        .onAppear(perform: viewModel.load)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(postLoader: MockPostLoader())
     }
 }

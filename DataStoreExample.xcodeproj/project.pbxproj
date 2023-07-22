@@ -12,19 +12,13 @@
 		29E20A832A6C7A15000EB083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E20A822A6C7A15000EB083 /* Assets.xcassets */; };
 		29E20A862A6C7A15000EB083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E20A852A6C7A15000EB083 /* Preview Assets.xcassets */; };
 		29E20A902A6C7A15000EB083 /* DataStoreExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E20A8F2A6C7A15000EB083 /* DataStoreExampleTests.swift */; };
-		29E20A9A2A6C7A15000EB083 /* DataStoreExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E20A992A6C7A15000EB083 /* DataStoreExampleUITests.swift */; };
-		29E20A9C2A6C7A15000EB083 /* DataStoreExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E20A9B2A6C7A15000EB083 /* DataStoreExampleUITestsLaunchTests.swift */; };
+		29E20AAA2A6C7A68000EB083 /* DataStore in Frameworks */ = {isa = PBXBuildFile; productRef = 29E20AA92A6C7A68000EB083 /* DataStore */; };
+		29E20AAC2A6C7ADE000EB083 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E20AAB2A6C7ADE000EB083 /* ContentViewModel.swift */; };
+		29E20AAF2A6C7F34000EB083 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 29E20AAE2A6C7F34000EB083 /* Network */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		29E20A8C2A6C7A15000EB083 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29E20A732A6C7A14000EB083 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29E20A7A2A6C7A14000EB083;
-			remoteInfo = DataStoreExample;
-		};
-		29E20A962A6C7A15000EB083 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29E20A732A6C7A14000EB083 /* Project object */;
 			proxyType = 1;
@@ -41,9 +35,7 @@
 		29E20A852A6C7A15000EB083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		29E20A8B2A6C7A15000EB083 /* DataStoreExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStoreExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E20A8F2A6C7A15000EB083 /* DataStoreExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreExampleTests.swift; sourceTree = "<group>"; };
-		29E20A952A6C7A15000EB083 /* DataStoreExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStoreExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29E20A992A6C7A15000EB083 /* DataStoreExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreExampleUITests.swift; sourceTree = "<group>"; };
-		29E20A9B2A6C7A15000EB083 /* DataStoreExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29E20AAB2A6C7ADE000EB083 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +43,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E20AAA2A6C7A68000EB083 /* DataStore in Frameworks */,
+				29E20AAF2A6C7F34000EB083 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		29E20A882A6C7A15000EB083 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E20A922A6C7A15000EB083 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,7 +63,6 @@
 			children = (
 				29E20A7D2A6C7A14000EB083 /* DataStoreExample */,
 				29E20A8E2A6C7A15000EB083 /* DataStoreExampleTests */,
-				29E20A982A6C7A15000EB083 /* DataStoreExampleUITests */,
 				29E20A7C2A6C7A14000EB083 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +72,6 @@
 			children = (
 				29E20A7B2A6C7A14000EB083 /* DataStoreExample.app */,
 				29E20A8B2A6C7A15000EB083 /* DataStoreExampleTests.xctest */,
-				29E20A952A6C7A15000EB083 /* DataStoreExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +79,7 @@
 		29E20A7D2A6C7A14000EB083 /* DataStoreExample */ = {
 			isa = PBXGroup;
 			children = (
+				29E20AAB2A6C7ADE000EB083 /* ContentViewModel.swift */,
 				29E20A7E2A6C7A14000EB083 /* DataStoreExampleApp.swift */,
 				29E20A802A6C7A14000EB083 /* ContentView.swift */,
 				29E20A822A6C7A15000EB083 /* Assets.xcassets */,
@@ -118,15 +104,6 @@
 			path = DataStoreExampleTests;
 			sourceTree = "<group>";
 		};
-		29E20A982A6C7A15000EB083 /* DataStoreExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				29E20A992A6C7A15000EB083 /* DataStoreExampleUITests.swift */,
-				29E20A9B2A6C7A15000EB083 /* DataStoreExampleUITestsLaunchTests.swift */,
-			);
-			path = DataStoreExampleUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +120,10 @@
 			dependencies = (
 			);
 			name = DataStoreExample;
+			packageProductDependencies = (
+				29E20AA92A6C7A68000EB083 /* DataStore */,
+				29E20AAE2A6C7F34000EB083 /* Network */,
+			);
 			productName = DataStoreExample;
 			productReference = 29E20A7B2A6C7A14000EB083 /* DataStoreExample.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +146,6 @@
 			productReference = 29E20A8B2A6C7A15000EB083 /* DataStoreExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		29E20A942A6C7A15000EB083 /* DataStoreExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29E20AA52A6C7A15000EB083 /* Build configuration list for PBXNativeTarget "DataStoreExampleUITests" */;
-			buildPhases = (
-				29E20A912A6C7A15000EB083 /* Sources */,
-				29E20A922A6C7A15000EB083 /* Frameworks */,
-				29E20A932A6C7A15000EB083 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				29E20A972A6C7A15000EB083 /* PBXTargetDependency */,
-			);
-			name = DataStoreExampleUITests;
-			productName = DataStoreExampleUITests;
-			productReference = 29E20A952A6C7A15000EB083 /* DataStoreExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +163,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 29E20A7A2A6C7A14000EB083;
 					};
-					29E20A942A6C7A15000EB083 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 29E20A7A2A6C7A14000EB083;
-					};
 				};
 			};
 			buildConfigurationList = 29E20A762A6C7A14000EB083 /* Build configuration list for PBXProject "DataStoreExample" */;
@@ -215,13 +174,16 @@
 				Base,
 			);
 			mainGroup = 29E20A722A6C7A14000EB083;
+			packageReferences = (
+				29E20AA82A6C7A68000EB083 /* XCRemoteSwiftPackageReference "DataStore" */,
+				29E20AAD2A6C7F34000EB083 /* XCRemoteSwiftPackageReference "Network" */,
+			);
 			productRefGroup = 29E20A7C2A6C7A14000EB083 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				29E20A7A2A6C7A14000EB083 /* DataStoreExample */,
 				29E20A8A2A6C7A15000EB083 /* DataStoreExampleTests */,
-				29E20A942A6C7A15000EB083 /* DataStoreExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +205,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29E20A932A6C7A15000EB083 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +214,7 @@
 			files = (
 				29E20A812A6C7A14000EB083 /* ContentView.swift in Sources */,
 				29E20A7F2A6C7A14000EB083 /* DataStoreExampleApp.swift in Sources */,
+				29E20AAC2A6C7ADE000EB083 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +226,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29E20A912A6C7A15000EB083 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E20A9A2A6C7A15000EB083 /* DataStoreExampleUITests.swift in Sources */,
-				29E20A9C2A6C7A15000EB083 /* DataStoreExampleUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +233,6 @@
 			isa = PBXTargetDependency;
 			target = 29E20A7A2A6C7A14000EB083 /* DataStoreExample */;
 			targetProxy = 29E20A8C2A6C7A15000EB083 /* PBXContainerItemProxy */;
-		};
-		29E20A972A6C7A15000EB083 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29E20A7A2A6C7A14000EB083 /* DataStoreExample */;
-			targetProxy = 29E20A962A6C7A15000EB083 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -503,40 +445,6 @@
 			};
 			name = Release;
 		};
-		29E20AA62A6C7A15000EB083 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = openbytes.DataStoreExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DataStoreExample;
-			};
-			name = Debug;
-		};
-		29E20AA72A6C7A15000EB083 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = openbytes.DataStoreExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DataStoreExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -567,16 +475,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29E20AA52A6C7A15000EB083 /* Build configuration list for PBXNativeTarget "DataStoreExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29E20AA62A6C7A15000EB083 /* Debug */,
-				29E20AA72A6C7A15000EB083 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29E20AA82A6C7A68000EB083 /* XCRemoteSwiftPackageReference "DataStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/DataStore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		29E20AAD2A6C7F34000EB083 /* XCRemoteSwiftPackageReference "Network" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/Network";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29E20AA92A6C7A68000EB083 /* DataStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29E20AA82A6C7A68000EB083 /* XCRemoteSwiftPackageReference "DataStore" */;
+			productName = DataStore;
+		};
+		29E20AAE2A6C7F34000EB083 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29E20AAD2A6C7F34000EB083 /* XCRemoteSwiftPackageReference "Network" */;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29E20A732A6C7A14000EB083 /* Project object */;
 }
