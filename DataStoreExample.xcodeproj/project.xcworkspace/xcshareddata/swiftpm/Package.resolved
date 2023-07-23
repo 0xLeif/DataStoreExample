@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/0xLeif/DataStore",
       "state" : {
-        "revision" : "3ecb77675110aabf411c8c9c5cebbd4a594cd858",
-        "version" : "0.2.1"
+        "revision" : "838fd2ffa5bf634720df1afc1fac45132bf06db4",
+        "version" : "0.3.0"
       }
     },
     {

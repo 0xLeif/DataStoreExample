@@ -95,7 +95,7 @@ struct StoredPost: StorableData {
 }
 
 class ContentViewModel: ConsumingObservableObject {
-    private let dataStore: DataStore<PostLoader, StoredPost>
+    private let dataStore: DataStore<PostLoader>
 
     @Published var isLoading: Bool
 
